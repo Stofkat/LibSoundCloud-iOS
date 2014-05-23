@@ -8,7 +8,7 @@ This project delivers an almost directly ready to use implementation of the Soun
 
 Still WIP but already has the following functionality:
 
-Login with OAUTH via Safari browser with SoundCloud, Google or Facebook account
+- Login with OAUTH via Safari browser with SoundCloud, Google or Facebook account
 - Search for tracks
 - Get private user tracks
 - Download and play selected tracks.
