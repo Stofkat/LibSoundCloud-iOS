@@ -1,10 +1,19 @@
 //
 //  SoundCloud.m
-//  Plugg
+//  Stofkat.org
 //
-//  Created by OwnSite BV on 08-05-14.
+// First basic version of my custom SoundCloud library
+// The one from SoundCloud has 5 dependancy projects just
+// for some very basic funtionality. This project only uses
+// JSONKit as an aditional library and should be much easier
+// to implement in your own projects
+// if you have any questions you can mail me at stofkat@gmail.com
+
+//  Created by Stofkat.org on 23-05-14.
+//  Copyright (c) 2014 Stofkat. All rights reserved.
 //
-//
+
+
 
 #import "SoundCloud.h"
 #import "JSONKit.h"
@@ -48,7 +57,7 @@
 - (void)doOauthWithCode: (NSString *)code {
     
     NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com/oauth2/token/"];
-    NSString *postString =[NSString stringWithFormat:@"client_id=%@&client_secret=%@&grant_type=authorization_code&redirect_uri=plugg://oauth&code=%@",CLIENT_ID,CLIENT_SECRET,code];
+    NSString *postString =[NSString stringWithFormat:@"client_id=%@&client_secret=%@&grant_type=authorization_code&redirect_uri=%@&code=%@",CLIENT_ID,CLIENT_SECRET,REDIRECT_URI,code];
     NSLog(@"post string: %@",postString);
     NSData *postData = [postString dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

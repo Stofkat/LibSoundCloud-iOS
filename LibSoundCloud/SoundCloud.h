@@ -16,11 +16,12 @@
 #import <AVFoundation/AVFoundation.h>
 @interface SoundCloud : NSObject
 
-#define CLIENT_ID @"YOUR_ID"
-#define CLIENT_SECRET @"YOUR_SECRET"
-#define SC_API_URL @"https://api.soundcloud.com"
+//Change these to your own apps values
+#define CLIENT_ID @"ab91a50019b2954d03cad204bd6ace99"
+#define CLIENT_SECRET @"f7e8588e40c22510686d80a198331774"
+#define REDIRECT_URI @"yourappname://oauth"//don't forget to change this in Info.plist as well
 
-#define REDIRECT_URI @"YOUR_REDIRECT_URL"
+#define SC_API_URL @"https://api.soundcloud.com"
 #define SC_TOKEN @"SC_TOKEN"
 #define SC_CODE @"SC_CODE"
 

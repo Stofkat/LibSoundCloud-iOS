@@ -21,7 +21,7 @@
 
 
 // this happens while we are running ( in the background, or from within our own app )
-// only valid if Plugg-Info.plist specifies a protocol to handle
+// only valid if Info.plist specifies a protocol to handle
 - (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)url
 {
     if (!url) {
